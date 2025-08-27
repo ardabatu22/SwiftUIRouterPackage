@@ -15,15 +15,15 @@ public final class Router: ObservableObject {
     public init() {}
 
     public func push<V: View>(_ view: V) {
-        path.append(IdentifiedView(view: AnyView(view)))
-    }
+         path.append(IdentifiedView(view: view, router: self))
+     }
 
     public func pop() {
         _ = path.popLast()
     }
 
     public func presentSheet<V: View>(_ view: V) {
-        sheet = IdentifiedView(view: AnyView(view))
+        sheet = IdentifiedView(view: view, router: self)
     }
 
     public func dismissSheet() {

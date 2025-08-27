@@ -11,10 +11,10 @@ public struct IdentifiedView: Identifiable, Hashable {
     public let id: UUID
     public let view: AnyView
 
-    public init(id: UUID = UUID(), view: AnyView) {
-        self.id = id
-        self.view = view
-    }
+    public init<V: View>(id: UUID = UUID(), view: V, router: Router) {
+          self.id = id
+          self.view = AnyView(view.environmentObject(router))
+      }
 
     // Hashable conformance
     public static func == (lhs: IdentifiedView, rhs: IdentifiedView) -> Bool {
