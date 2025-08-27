@@ -8,6 +8,4 @@
 # Xcode
 xcuserdata/
 DerivedData/
-
-# Optional (Xcode workspace dosyalarını commit etmek istemezsen)
 *.xcworkspace
