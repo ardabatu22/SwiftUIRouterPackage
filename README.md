@@ -12,6 +12,8 @@ A simple, generic, and reusable Router package for SwiftUI
 Add via **Swift Package Manager**:
 https://github.com/ardabatu22/SwiftUIRouterPackage
 
+## Versioning
+Current stable release: 1.0.0
 
 ## Usage
 
