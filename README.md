@@ -15,6 +15,10 @@ https://github.com/ardabatu22/SwiftUIRouterPackage
 ## Versioning
 Current stable release: 1.0.0
 
+## Important Notes
+- Do **NOT** add another `NavigationStack` inside your detail views.  
+  `AppRouter` already manages the `NavigationStack` for you.
+  
 ## Usage
 
 ```swift
